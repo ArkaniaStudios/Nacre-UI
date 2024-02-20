@@ -1,0 +1,6 @@
+name: Nacre-UI
+version: 0.0.1-beta
+main: arkania\Main
+src-namespace-prefix: arkania
+api: 5.0.0
+author: Julien
