@@ -12,12 +12,13 @@ use pocketmine\permission\Permission;
 
 abstract class Button implements JsonSerializable {
     use FormTranslationTrait;
-    use PermissibleTrait;
+    use PermissibleTrait {
+        hasPermission as private;
+    }
 
     private string $name;
     private Translatable|string $text;
     private Icon|null $icon;
-    private Permission|string|null $permission = null;
 
     public function __construct(
         string $name,
@@ -40,8 +41,7 @@ abstract class Button implements JsonSerializable {
     public function jsonSerialize() : array {
         return [
             "text" => $this->translate($this->text),
-            "name" => $this->name,
-            "icon" => $this->icon?->jsonSerialize() ?? null,
+            "image" => $this->icon?->jsonSerialize() ?? null,
             "permission" => $this->permission instanceof Permission ? $this->permission->getName() : $this->permission
         ];
     }
