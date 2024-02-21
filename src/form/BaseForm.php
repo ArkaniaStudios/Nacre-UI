@@ -10,16 +10,21 @@ use pocketmine\lang\Translatable;
 use pocketmine\player\Player;
 
 abstract class BaseForm implements Form {
-    use FormTranslationTrait;
-    use PermissibleTrait;
+    use FormTranslationTrait{
+        FormTranslationTrait::__construct as private __formTranslationConstruct;
+    }
+    use PermissibleTrait {
+        PermissibleTrait::__construct as private __permissibleConstruct;
+    }
 
-    protected Player $player;
-    private Translatable|string $title;
+    protected Translatable|string $title;
 
     public function __construct(
         Player $player,
         Translatable|string $title
     ) {
+        $this->__formTranslationConstruct($player);
+        $this->__permissibleConstruct($player);
         $this->player = $player;
         $this->title = $title;
     }
