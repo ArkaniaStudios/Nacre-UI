@@ -3,15 +3,17 @@ declare(strict_types=1);
 
 namespace arkania\form\trait;
 
+use pocketmine\permission\Permission;
+
 trait PermissibleTrait {
 
-     private ?string $permission = null;
+     private Permission|string|null $permission = null;
 
-        public function setPermission(string $permission) : void {
+        public function setPermission(Permission|string $permission) : void {
             $this->permission = $permission;
         }
 
-        public function getPermission() : ?string {
+        public function getPermission() : Permission|string|null {
             return $this->permission;
         }
 
