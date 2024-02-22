@@ -15,5 +15,4 @@ class Main extends PluginBase {
     protected function onEnable() : void {
         $this->getServer()->getCommandMap()->register('nacre', new TestCommand());
     }
-
 }
