@@ -11,7 +11,7 @@ $form = new \arkania\form\class\ModalForm(
     'Titre du formulaire',
     'Contenu du formulaire',
     'Bouton 1',
-    'Bouton 2'
+    'Bouton 2',
     function (Player $player, $data) { #Optionnel
         // Action à effectuer lors de appui sur le bouton
     },
