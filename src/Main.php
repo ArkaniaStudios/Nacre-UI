@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace arkania;
 
+use arkania\form\listener\FormListener;
 use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase {
@@ -13,6 +14,7 @@ class Main extends PluginBase {
 
 
     protected function onEnable() : void {
+        $this->getServer()->getPluginManager()->registerEvents(new FormListener(), $this);
         $this->getServer()->getCommandMap()->register('nacre', new TestCommand());
     }
 }
