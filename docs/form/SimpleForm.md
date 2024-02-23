@@ -26,3 +26,9 @@ $player->sendForm($form);
 ```
 *Voici donc la façons la plus simple de faire un formulaire. Sachez aussi que lorsque vous mettez du texte, un `Translatable`
 est accepté.*
+
+### Permission
+Si vous souhaitez ajouter une permission à votre formulaire, faire :
+```injectablephp
+$form->setPermission('nom de la permission');
+```
