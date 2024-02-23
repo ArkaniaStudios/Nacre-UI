@@ -29,6 +29,6 @@ abstract class BaseForm implements Form {
         $this->title = $title;
     }
 
-    abstract public function getType();
+    abstract public function getType() : string;
 
 }
