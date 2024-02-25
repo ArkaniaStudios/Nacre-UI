@@ -127,13 +127,12 @@ return (new Config())
  / ___ \  |  _ <  | . \   / ___ \  | |\  |  | |   / ___ \  |_____| | |___  | |\  | | |_| |  | |  | |\  | | |___  
 /_/   \_\ |_| \_\ |_|\_\ /_/   \_\ |_| \_| |___| /_/   \_\         |_____| |_| \_|  \____| |___| |_| \_| |_____|
 
-ArkaniaStudios-ANGE, une API conçue pour simplifier le développement. 
-Fournissant des outils et des fonctionnalités aux développeurs.
-Cet outil est en constante évolution et est régulièrement mis à jour,
-afin de répondre aux besoins changeants de la communauté.
+Nacre-UI est une API destiné aux formulaires,
+elle permet aux développeurs d'avoir une compatibilité entre toutes les interfaces, 
+mais aussi éviter les taches fastidieuses à faire.
 
 @author Julien
-@link https://arkaniastudios.com
+@link https://arkaniastudios.com/Nacre-UI
 @version 0.0.1-beta
 
 BODY,
