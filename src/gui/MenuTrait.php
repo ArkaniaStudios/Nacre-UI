@@ -1,15 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace arkania\gui;
+namespace nacre\gui;
 
-use arkania\form\trait\FormTranslationTrait;
-use arkania\form\trait\PermissibleTrait;
+use nacre\form\trait\FormTranslationTrait;
+use nacre\form\trait\PermissibleTrait;
 use pocketmine\lang\Translatable;
-use pocketmine\network\mcpe\convert\TypeConverter;
-use pocketmine\network\mcpe\protocol\types\BlockPosition;
-use pocketmine\network\mcpe\protocol\UpdateBlockPacket;
-use pocketmine\permission\Permission;
 use pocketmine\player\Player;
 
 trait MenuTrait {

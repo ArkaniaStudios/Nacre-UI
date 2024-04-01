@@ -1,10 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace arkania\form\class;
+namespace nacre\form\class;
 
-use arkania\form\BaseForm;
-use pocketmine\lang\Translatable;
+use nacre\form\BaseForm;
 use pocketmine\player\Player;
 
 final class ModalForm extends BaseForm {
@@ -22,17 +21,17 @@ final class ModalForm extends BaseForm {
 
     public function __construct(
         Player $player,
-        Translatable|string $title,
-        Translatable|string $content,
-        Translatable|string $button1,
-        Translatable|string $button2,
+        string $title,
+        string $content,
+        string $button1,
+        string $button2,
         ?callable $onSubmit = null,
         ?callable $onClose = null
     ) {
         parent::__construct($player, $title);
-        $this->content = $this->translate($content);
-        $this->button1 = $this->translate($button1);
-        $this->button2 = $this->translate($button2);
+        $this->content = $content;
+        $this->button1 = $button1;
+        $this->button2 = $button2;
         $this->onSubmit = $onSubmit;
         $this->onClose = $onClose;
     }

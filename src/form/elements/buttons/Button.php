@@ -1,28 +1,25 @@
 <?php
 declare(strict_types=1);
 
-namespace arkania\form\elements\buttons;
+namespace nacre\form\elements\buttons;
 
-use arkania\form\elements\icon\Icon;
-use arkania\form\trait\FormTranslationTrait;
-use arkania\form\trait\PermissibleTrait;
 use JsonSerializable;
-use pocketmine\lang\Translatable;
+use nacre\form\elements\icon\Icon;
+use nacre\form\trait\PermissibleTrait;
 use pocketmine\permission\Permission;
 
 abstract class Button implements JsonSerializable {
-    use FormTranslationTrait;
     use PermissibleTrait {
         hasPermission as private;
     }
 
     private string $name;
-    private Translatable|string $text;
+    private string $text;
     private Icon|null $icon;
 
     public function __construct(
         string $name,
-        Translatable|string $text,
+        string $text,
         Permission|string|null $permission = null,
         Icon|null $icon = null
     ) {
@@ -38,9 +35,12 @@ abstract class Button implements JsonSerializable {
         return $this->name;
     }
 
+    /**
+     * @return array<string, string|array>
+     */
     public function jsonSerialize() : array {
         return [
-            "text" => $this->translate($this->text),
+            "text" => $this->text,
             "image" => $this->icon?->jsonSerialize() ?? null,
             "permission" => $this->permission instanceof Permission ? $this->permission->getName() : $this->permission
         ];

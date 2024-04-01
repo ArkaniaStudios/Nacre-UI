@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace arkania\gui\transaction;
+namespace nacre\gui\transaction;
 
-use arkania\gui\BaseMenu;
+use nacre\gui\BaseMenu;
 use pocketmine\item\Item;
 
 final class MenuTransaction {

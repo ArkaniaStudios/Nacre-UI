@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace arkania\gui\class;
+namespace nacre\gui\class;
 
-use arkania\gui\BaseMenu;
-use arkania\gui\MenuTrait;
-use arkania\Main;
+use nacre\gui\BaseMenu;
+use nacre\gui\MenuTrait;
+use nacre\Main;
 use pocketmine\block\inventory\ChestInventory;
 use pocketmine\block\inventory\DoubleChestInventory;
 use pocketmine\block\tile\Nameable;
@@ -19,7 +19,6 @@ use pocketmine\network\mcpe\protocol\types\CacheableNbt;
 use pocketmine\network\mcpe\protocol\UpdateBlockPacket;
 use pocketmine\player\Player;
 use pocketmine\scheduler\ClosureTask;
-use pocketmine\scheduler\TaskScheduler;
 use pocketmine\world\Position;
 
 final class DoubleChestMenu extends DoubleChestInventory implements BaseMenu{

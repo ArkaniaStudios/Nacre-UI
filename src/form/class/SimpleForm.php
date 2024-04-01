@@ -1,17 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace arkania\form\class;
+namespace nacre\form\class;
 
-use arkania\form\BaseForm;
-use arkania\form\elements\buttons\Button;
-use pocketmine\lang\Translatable;
+use nacre\form\BaseForm;
+use nacre\form\elements\buttons\Button;
 use pocketmine\permission\Permission;
 use pocketmine\player\Player;
 
 class SimpleForm extends BaseForm {
 
-    private Translatable|string $description;
+    private string $description;
 
     /** @var Button[] */
     private array $buttons;
@@ -24,8 +23,8 @@ class SimpleForm extends BaseForm {
 
     public function __construct(
         Player $player,
-        Translatable|string $title,
-        Translatable|string $description = '',
+        string $title,
+        string $description = '',
         array $buttons = [],
         ?callable $onSubmit = null,
         ?callable $onClose = null
@@ -65,7 +64,7 @@ class SimpleForm extends BaseForm {
         return [
             'type' => $this->getType(),
             'title' => $this->title,
-            'content' => $this->translate($this->description),
+            'content' => $this->description,
             'buttons' => $this->buttons,
             'permission' => $this->getPermission()
         ];

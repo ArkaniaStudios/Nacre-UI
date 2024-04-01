@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace arkania\form\elements;
+namespace nacre\form\elements;
 
 use JsonSerializable;
 

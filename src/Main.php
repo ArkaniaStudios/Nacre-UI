@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace arkania;
+namespace nacre;
 
-use arkania\form\listener\FormListener;
-use arkania\gui\listener\MenuListener;
+use nacre\form\listener\FormListener;
+use nacre\gui\listener\MenuListener;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\SingletonTrait;
 
@@ -20,6 +20,5 @@ class Main extends PluginBase {
     protected function onEnable() : void {
         $this->getServer()->getPluginManager()->registerEvents(new FormListener(), $this);
         $this->getServer()->getPluginManager()->registerEvents(new MenuListener(), $this);
-        $this->getServer()->getCommandMap()->register('nacre', new TestCommand());
     }
 }

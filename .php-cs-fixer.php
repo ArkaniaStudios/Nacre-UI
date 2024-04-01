@@ -121,11 +121,11 @@ return (new Config())
         'header_comment'                     => [
             'comment_type' => 'comment',
             'header'       => <<<BODY
-    _      ____    _  __     _      _   _   ___      _              _____   _   _    ____   ___   _   _   _____  
-   / \    |  _ \  | |/ /    / \    | \ | | |_ _|    / \            | ____| | \ | |  / ___| |_ _| | \ | | | ____| 
-  / _ \   | |_) | | ' /    / _ \   |  \| |  | |    / _ \    _____  |  _|   |  \| | | |  _   | |  |  \| | |  _|  
- / ___ \  |  _ <  | . \   / ___ \  | |\  |  | |   / ___ \  |_____| | |___  | |\  | | |_| |  | |  | |\  | | |___  
-/_/   \_\ |_| \_\ |_|\_\ /_/   \_\ |_| \_| |___| /_/   \_\         |_____| |_| \_|  \____| |___| |_| \_| |_____|
+    _      ____    _  __     _      _   _   ___      _ 
+   / \    |  _ \  | |/ /    / \    | \ | | |_ _|    / \  
+  / _ \   | |_) | | ' /    / _ \   |  \| |  | |    / _ \ 
+ / ___ \  |  _ <  | . \   / ___ \  | |\  |  | |   / ___ \
+/_/   \_\ |_| \_\ |_|\_\ /_/   \_\ |_| \_| |___| /_/   \_\ 
 
 Nacre-UI est une API destiné aux formulaires,
 elle permet aux développeurs d'avoir une compatibilité entre toutes les interfaces, 
@@ -133,7 +133,7 @@ mais aussi éviter les taches fastidieuses à faire.
 
 @author Julien
 @link https://arkaniastudios.com/Nacre-UI
-@version 0.0.1-beta
+@version 1.0.0
 
 BODY,
             'location' => 'after_open'

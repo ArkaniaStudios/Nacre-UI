@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace arkania\form\elements\icon;
+namespace nacre\form\elements\icon;
 
 final class IconUrl implements Icon {
 

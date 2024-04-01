@@ -1,11 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace arkania\form\class;
+namespace nacre\form\class;
 
-use arkania\form\BaseForm;
-use arkania\form\elements\Element;
-use pocketmine\lang\Translatable;
+use nacre\form\BaseForm;
+use nacre\form\elements\Element;
 use pocketmine\player\Player;
 
 final class CustomForm extends BaseForm {
@@ -22,7 +21,7 @@ final class CustomForm extends BaseForm {
 
     public function __construct(
         Player $player,
-        Translatable|string $title,
+        string $title,
         array $elements = [],
         ?callable $onSubmit = null,
         ?callable $onClose = null

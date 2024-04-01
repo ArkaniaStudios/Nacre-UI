@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace arkania\gui;
+namespace nacre\gui;
 
 use pocketmine\permission\Permission;
 

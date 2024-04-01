@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace arkania\gui\transaction;
+namespace nacre\gui\transaction;
 
 class MenuTransactionResult {
 

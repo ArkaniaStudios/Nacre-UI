@@ -1,12 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace arkania\form\trait;
+namespace nacre\form\trait;
 
 use pocketmine\permission\Permission;
 use pocketmine\player\Player;
 
 trait PermissibleTrait {
+
+    protected Player $player;
+
     public function __construct(Player $player) {
         $this->player = $player;
     }

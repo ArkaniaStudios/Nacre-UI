@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace arkania\gui\class;
+namespace nacre\gui\class;
 
-use arkania\gui\BaseMenu;
-use arkania\gui\MenuTrait;
+use nacre\gui\BaseMenu;
+use nacre\gui\MenuTrait;
 use pocketmine\block\inventory\HopperInventory;
 use pocketmine\block\tile\Nameable;
 use pocketmine\block\VanillaBlocks;
