@@ -20,5 +20,6 @@
             "name": "Dumont-Julien",
             "email": "dumontj357@gmail.com"
         }
-    ]
+    ],
+    "minimum-stability": "stable"
 }
