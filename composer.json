@@ -12,7 +12,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "arkania\\": "src/"
+            "nacre\\": "src/"
         }
     },
     "authors": [
@@ -20,5 +20,6 @@
             "name": "Dumont-Julien",
             "email": "dumontj357@gmail.com"
         }
-    ]
+    ],
+    "minimum-stability": "stable"
 }

@@ -24,8 +24,7 @@ $form = new SimpleForm(
 );
 $player->sendForm($form);
 ```
-*Voici donc la façons la plus simple de faire un formulaire. Sachez aussi que lorsque vous mettez du texte, un `Translatable`
-est accepté.*
+*Voici donc la façons la plus simple de faire un formulaire.*
 
 ### Permission
 Si vous souhaitez ajouter une permission à votre formulaire, faire :
