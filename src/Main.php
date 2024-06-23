@@ -21,6 +21,7 @@ declare(strict_types=1);
 
 namespace nacre;
 
+use arkania\utils\bossbar\BossListener;
 use nacre\form\listener\FormListener;
 use nacre\gui\listener\MenuListener;
 use pocketmine\plugin\PluginBase;
@@ -37,5 +38,6 @@ class Main extends PluginBase {
 	protected function onEnable() : void {
 		$this->getServer()->getPluginManager()->registerEvents(new FormListener(), $this);
 		$this->getServer()->getPluginManager()->registerEvents(new MenuListener(), $this);
+        $this->getServer()->getPluginManager()->registerEvents(new BossListener(), $this);
 	}
 }
