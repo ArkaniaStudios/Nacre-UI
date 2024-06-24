@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace arkania\utils\bossbar;
+namespace nacre\bossbar;
 
 use InvalidArgumentException;
 use pocketmine\event\Listener;
