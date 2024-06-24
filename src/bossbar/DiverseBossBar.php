@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace arkania\utils\bossbar;
+namespace nacre\bossbar;
 
 use pocketmine\entity\Attribute;
 use pocketmine\entity\AttributeMap;
