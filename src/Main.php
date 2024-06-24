@@ -21,7 +21,7 @@ declare(strict_types=1);
 
 namespace nacre;
 
-use arkania\utils\bossbar\BossListener;
+use nacre\bossbar\BossListener;
 use nacre\form\listener\FormListener;
 use nacre\gui\listener\MenuListener;
 use pocketmine\plugin\PluginBase;
