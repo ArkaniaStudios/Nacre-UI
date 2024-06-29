@@ -21,15 +21,11 @@ declare(strict_types=1);
 
 namespace nacre\gui;
 
-use nacre\form\trait\FormTranslationTrait;
 use nacre\form\trait\PermissibleTrait;
 use pocketmine\lang\Translatable;
 use pocketmine\player\Player;
 
 trait MenuTrait {
-	use FormTranslationTrait {
-		FormTranslationTrait::__construct as private __formTranslationConstruct;
-	}
 	use PermissibleTrait;
 
 	private string $name;
@@ -51,8 +47,7 @@ trait MenuTrait {
 		?callable $closeHandler = null,
 		?string $permission = null
 	) {
-		$this->__formTranslationConstruct($player);
-		$this->name     = $this->translate($name);
+		$this->name     = $name;
 		$this->viewOnly = $viewOnly;
 		if($contents !== null) {
 			$this->setContents($contents);
